@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788.4" systemVersion="24G84" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ColModel" representedClassName="ColModel" syncable="YES" codeGenerationType="class">
+        <attribute name="cClim" optional="YES" attributeType="String"/>
+        <attribute name="cCName" optional="YES" attributeType="String"/>
+        <attribute name="cDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="cHum" optional="YES" attributeType="String"/>
+        <attribute name="cLName" optional="YES" attributeType="String"/>
+        <attribute name="cLoc" optional="YES" attributeType="String"/>
+        <attribute name="cSpec" optional="YES" attributeType="String"/>
+        <attribute name="cTemp" optional="YES" attributeType="String"/>
+        <attribute name="cTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="FieldModel" representedClassName="FieldModel" syncable="YES" codeGenerationType="class">
+        <attribute name="fDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fDescr" optional="YES" attributeType="String"/>
+        <attribute name="fLoc" optional="YES" attributeType="String"/>
+        <attribute name="fStatus" optional="YES" attributeType="String"/>
+        <attribute name="fTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fTit" optional="YES" attributeType="String"/>
+    </entity>
+</model>
