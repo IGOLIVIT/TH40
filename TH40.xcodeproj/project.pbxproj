@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		78E25AA42E785C7700A7043C /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 78E25AA32E785C7700A7043C /* OneSignalFramework */; };
+		78E25AA72E785C8A00A7043C /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 78E25AA62E785C8A00A7043C /* AppsFlyerLib */; };
+		78E25AB62E785E3500A7043C /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 78E25AAF2E785E3500A7043C /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		78E24D3D2E6DEBBC00A7043C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +27,59 @@
 			remoteGlobalIDString = 78E24D2E2E6DEBB900A7043C;
 			remoteInfo = TH40;
 		};
+		78E25AB42E785E3500A7043C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78E24D272E6DEBB900A7043C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78E25AAE2E785E3500A7043C;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78E25ABB2E785E3500A7043C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				78E25AB62E785E3500A7043C /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		78E24D2F2E6DEBB900A7043C /* TH40.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TH40.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E24D3C2E6DEBBC00A7043C /* TH40Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TH40Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E24D462E6DEBBC00A7043C /* TH40UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TH40UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E25AAF2E785E3500A7043C /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		78E25AA92E785D4C00A7043C /* Exceptions for "TH40" folder in "TH40" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 78E24D2E2E6DEBB900A7043C /* TH40 */;
+		};
+		78E25ABA2E785E3500A7043C /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 78E25AAE2E785E3500A7043C /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		78E24D312E6DEBB900A7043C /* TH40 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				78E25AA92E785D4C00A7043C /* Exceptions for "TH40" folder in "TH40" target */,
+			);
 			path = TH40;
 			sourceTree = "<group>";
 		};
@@ -45,6 +93,14 @@
 			path = TH40UITests;
 			sourceTree = "<group>";
 		};
+		78E25AB02E785E3500A7043C /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				78E25ABA2E785E3500A7043C /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E25AA42E785C7700A7043C /* OneSignalFramework in Frameworks */,
+				78E25AA72E785C8A00A7043C /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +127,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78E25AAC2E785E3500A7043C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +143,7 @@
 				78E24D312E6DEBB900A7043C /* TH40 */,
 				78E24D3F2E6DEBBC00A7043C /* TH40Tests */,
 				78E24D492E6DEBBC00A7043C /* TH40UITests */,
+				78E25AB02E785E3500A7043C /* OneSignalNotificationServiceExtension */,
 				78E24D302E6DEBB900A7043C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +154,7 @@
 				78E24D2F2E6DEBB900A7043C /* TH40.app */,
 				78E24D3C2E6DEBBC00A7043C /* TH40Tests.xctest */,
 				78E24D462E6DEBBC00A7043C /* TH40UITests.xctest */,
+				78E25AAF2E785E3500A7043C /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,16 +169,20 @@
 				78E24D2B2E6DEBB900A7043C /* Sources */,
 				78E24D2C2E6DEBB900A7043C /* Frameworks */,
 				78E24D2D2E6DEBB900A7043C /* Resources */,
+				78E25ABB2E785E3500A7043C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				78E25AB52E785E3500A7043C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				78E24D312E6DEBB900A7043C /* TH40 */,
 			);
 			name = TH40;
 			packageProductDependencies = (
+				78E25AA32E785C7700A7043C /* OneSignalFramework */,
+				78E25AA62E785C8A00A7043C /* AppsFlyerLib */,
 			);
 			productName = TH40;
 			productReference = 78E24D2F2E6DEBB900A7043C /* TH40.app */;
@@ -163,6 +234,28 @@
 			productReference = 78E24D462E6DEBBC00A7043C /* TH40UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		78E25AAE2E785E3500A7043C /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E25AB72E785E3500A7043C /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				78E25AAB2E785E3500A7043C /* Sources */,
+				78E25AAC2E785E3500A7043C /* Frameworks */,
+				78E25AAD2E785E3500A7043C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				78E25AB02E785E3500A7043C /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 78E25AAF2E785E3500A7043C /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 78E24D2E2E6DEBB900A7043C;
 					};
+					78E25AAE2E785E3500A7043C = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = 78E24D2A2E6DEBB900A7043C /* Build configuration list for PBXProject "TH40" */;
@@ -195,6 +291,10 @@
 			);
 			mainGroup = 78E24D262E6DEBB900A7043C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				78E25AA22E785C7700A7043C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				78E25AA52E785C8A00A7043C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 78E24D302E6DEBB900A7043C /* Products */;
 			projectDirPath = "";
@@ -203,6 +303,7 @@
 				78E24D2E2E6DEBB900A7043C /* TH40 */,
 				78E24D3B2E6DEBBC00A7043C /* TH40Tests */,
 				78E24D452E6DEBBC00A7043C /* TH40UITests */,
+				78E25AAE2E785E3500A7043C /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +324,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		78E24D442E6DEBBC00A7043C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E25AAD2E785E3500A7043C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +361,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78E25AAB2E785E3500A7043C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +380,11 @@
 			isa = PBXTargetDependency;
 			target = 78E24D2E2E6DEBB900A7043C /* TH40 */;
 			targetProxy = 78E24D472E6DEBBC00A7043C /* PBXContainerItemProxy */;
+		};
+		78E25AB52E785E3500A7043C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78E25AAE2E785E3500A7043C /* OneSignalNotificationServiceExtension */;
+			targetProxy = 78E25AB42E785E3500A7043C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,11 +513,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TH40/TH40.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96L25RL74Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "ReptilesRoot: Reptiles Journal";
+				INFOPLIST_FILE = TH40/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reptiles Root: Reptiles Journal";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,8 +532,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = IOI.TH40;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ela.r3pt1l3sr00trj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -427,11 +550,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TH40/TH40.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96L25RL74Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "ReptilesRoot: Reptiles Journal";
+				INFOPLIST_FILE = TH40/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reptiles Root: Reptiles Journal";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -443,8 +569,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = IOI.TH40;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ela.r3pt1l3sr00trj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -524,6 +650,56 @@
 			};
 			name = Release;
 		};
+		78E25AB82E785E3500A7043C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96L25RL74Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ela.r3pt1l3sr00trj.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78E25AB92E785E3500A7043C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96L25RL74Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ela.r3pt1l3sr00trj.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -563,7 +739,48 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		78E25AB72E785E3500A7043C /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E25AB82E785E3500A7043C /* Debug */,
+				78E25AB92E785E3500A7043C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78E25AA22E785C7700A7043C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
+		78E25AA52E785C8A00A7043C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78E25AA32E785C7700A7043C /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78E25AA22E785C7700A7043C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		78E25AA62E785C8A00A7043C /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78E25AA52E785C8A00A7043C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78E24D272E6DEBB900A7043C /* Project object */;
 }
